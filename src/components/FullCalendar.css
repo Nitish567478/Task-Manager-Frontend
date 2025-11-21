@@ -1,0 +1,84 @@
+.calendar-wrapper {
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.calendar-nav-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.calendar-nav-btn:hover {
+  background-color: #1e40af;
+}
+
+.calendar-month-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #1e293b;
+}
+
+.calendar-days-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.calendar-day-name {
+  padding: 0.4rem 0;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+}
+
+.calendar-day {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.calendar-day-default {
+  color: #475569;
+}
+
+.calendar-day-today {
+  background-color: #2563eb;
+  color: white;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.7);
+}
+
+.calendar-day-selected {
+  background-color: #1e40af;
+  color: white;
+  box-shadow: 0 0 10px rgba(30, 64, 175, 0.7);
+  font-weight: 700;
+}

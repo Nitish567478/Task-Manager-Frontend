@@ -1,0 +1,211 @@
+.dash-container {
+  display: flex;
+  min-height: 100vh;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.calendar-sidebar {
+  flex: 0 0 320px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  height: fit-content;
+}
+
+.flex-1 {
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.search-input {
+  width: 260px;
+  padding: 0.6rem 1rem;
+  font-size: 16px;
+  border: 1.5px solid #d1d9e6;
+  border-radius: 8px;
+  background-color: #fefefe;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 8px #2563ebaa;
+}
+
+.btn-create {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-create:hover {
+  background-color: #1e40af;
+  box-shadow: 0 6px 14px rgba(30, 64, 175, 0.4);
+}
+
+.dashboard-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.user-info {
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.error-text {
+  color: #dc2626;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.empty-state {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+.task-card-custom {
+  background-color: #f9fbff;
+  border: 1px solid #e0e7ff;
+  border-radius: 12px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  box-shadow: 0 2px 7px rgba(59, 130, 246, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.task-card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.task-status {
+  font-size: 0.875rem;
+  color: #f6f7f8;
+  font-weight: 600;
+  background-color: #1bca52;
+  padding: 0.2rem 0.6rem;
+  border-radius: 8px;
+}
+
+.task-desc {
+  margin-top: 0.75rem;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.task-card-meta {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.task-meta-author {
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.task-card-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn-edit-custom {
+  background-color: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-edit-custom:hover {
+  background-color: #059669;
+  box-shadow: 0 4px 12px #059669bb;
+}
+
+.btn-delete-custom {
+  background-color: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-delete-custom:hover {
+  background-color: #dc2626;
+  box-shadow: 0 4px 12px #dc2626bb;
+}
+
+@media (max-width: 768px) {
+  .dash-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .calendar-sidebar {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}

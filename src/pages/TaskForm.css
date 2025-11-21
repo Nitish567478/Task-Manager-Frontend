@@ -1,0 +1,63 @@
+.task-wrapper {
+  width: 90%;
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.task-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.task-input,
+.task-textarea,
+.task-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.task-textarea {
+  height: 110px;
+  resize: none;
+}
+
+.readonly {
+  background: #f5f5f5;
+  color: #666;
+}
+
+.task-submit {
+  padding: 12px;
+  background: #0066ff;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task-submit:hover {
+  background: #004bcc;
+}
+
+.task-error {
+  margin-top: 12px;
+  color: #c00;
+  text-align: center;
+  font-size: 15px;
+}

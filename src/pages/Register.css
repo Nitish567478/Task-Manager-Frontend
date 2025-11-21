@@ -1,0 +1,59 @@
+/* Wrapper */
+.register-wrapper {
+  width: 400px;
+  margin: 80px auto;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.register-wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* Form */
+.register-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+.register-wrapper input {
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* Input focus */
+.register-wrapper input:focus {
+  outline: none;
+  border-color: #28a745;
+}
+
+/* Button */
+.register-wrapper button {
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.register-wrapper button:hover {
+  background: #1e7e34;
+}
+
+/* Error */
+.error-msg {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
