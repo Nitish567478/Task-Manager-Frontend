@@ -103,7 +103,7 @@ const Dashboard = () => {
                 <p className="task-desc">{t.description}</p>
 
                 <div className="task-card-meta">
-                  <span className="task-meta-author">{t.author || "nitish"}</span>
+                  <span className="task-meta-author">{t.author || "Unknown"}</span>
                   <span>{t.createdAt}</span>
                 </div>
 
