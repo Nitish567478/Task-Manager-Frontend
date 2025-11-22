@@ -93,7 +93,7 @@ const Dashboard = () => {
         ) : (
           <div className="task-grid">
             {filteredTasks.map((t) => (
-              <div key={t._id} className="task-card-custom">
+              <div key={t.id} className="task-card-custom">
 
                 <div className="task-card-header">
                   <h3 className="task-title">{t.title}</h3>
@@ -103,7 +103,7 @@ const Dashboard = () => {
                 <p className="task-desc">{t.description}</p>
 
                 <div className="task-card-meta">
-                  <span className="task-meta-author">{t.author || "Unknown"}</span>
+                  <span className="task-meta-author">{t.author || "nitish"}</span>
                   <span>{t.createdAt}</span>
                 </div>
 
